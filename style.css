@@ -1,0 +1,365 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar start */
+.nav {
+  background-color: black;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+
+a:hover {
+  color: yellow;
+  transform: scale(1.1);
+}
+a::after {
+  content: "";
+  /* width: 100%; */
+  width: 0%;
+  height: 2px;
+  background-color: yellow;
+  display: block;
+  border-radius: 10px;
+  transition: all 1s linear;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
+/* head start */
+
+.head{
+  width: 100%;
+  height: 830px;
+  /* border: 2px solid red; */
+}
+
+.heading{
+  height: 50px;
+  /* border: 2px solid green; */
+  position: relative;
+}
+
+.heading input{
+  position: absolute;
+  top: 10px;
+}
+
+.heading h2{
+  position: absolute;
+  top: 10px;
+  left: 47%;
+}
+
+.heading h2:hover{
+  transform: scale(1.2);
+  transition: all 2s linear;
+}
+
+.right li{
+  display: inline-block;
+  padding: 5px;
+  margin: 10px;
+}
+
+.right{
+  position: absolute;
+  right: 0px;
+}
+
+.right li:hover{
+  transform: scale(3);
+  transition: all 3s linear;
+}
+
+.head .center li{
+  list-style-type: none;
+  display: inline-block;
+  /* padding: 10px 20px; */
+  margin: 5px;
+}
+
+.head .center li:hover{
+  color: red;
+  transform: scale(1.2);
+  transition: all 1s linear;
+}
+
+.image{
+  height: 730px;
+  width: 100%;
+  text-align: center;
+  /* border: 2px solid black; */
+}
+
+.first{
+  width: 100%;
+  height: 400px;
+  background-color: red;
+  float: left;
+  position: relative;
+}
+.first img{
+  width: 100%;
+  height: 100%;
+}
+
+.first .text{
+  height: 200px;
+  width: 150px;
+  text-align: center;
+  position: absolute;
+  top:50px;
+  left: 100px;
+}
+
+.first .text hr{
+  height: 4px;
+  width: 50px;
+  background-color: black;
+  border-radius: 40px;
+  position: absolute;
+  left: 50px;
+}
+
+.second{
+  /* width: 48%; */
+  height: 300px;
+  float: left;
+  position: relative;
+  margin: 10px 5px 10px 10px;
+
+  /* margin: 9px; */
+}
+
+.second img, .third img{
+  width: 100%;
+  height: 100%;
+  /* transform: scale(1.2); */
+}
+
+.second .text1{
+  color: white;
+  position: absolute;
+  top:100px;
+  left: 20px;
+}
+
+.third{
+  /* width: 48%; */
+  height: 300px;
+  float: left;
+  position: relative;
+  margin: 10px 10px 10px 5px;
+
+  /* margin-top: 9px; */
+}
+
+.third .text2{
+  color: white;
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top:100px;
+  /* left: 20px; */
+  right: 10px;
+}
+
+.second, .third{
+  width: 48.5%;
+  /* margin: 9px; */
+}
+
+button{
+  background-color: black;
+  color: white;
+  padding: 10px 10px;
+}
+
+button:hover{
+  transition: all 3s linear;
+  transform: scale(1.2);
+}
+
+/* down starts */
+
+.down{
+  height: 495px;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+
+.down .one{
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.down .one h2{
+  margin-top: 20px;
+}
+
+.down .one h2::before{
+  content: "";
+  height: 5px;  
+  width: 5%;
+  background-color: black;
+  border-radius: 25px;
+  display: block;
+  position: absolute;
+  left: 47%;
+  top: -10px;
+}
+
+.down .one h2::after{
+  content: "";
+  height: 5px;  
+  width: 5%;
+  background-color: black;
+  border-radius: 25px;
+  display: block;
+  position: absolute;
+  left: 47%;
+  top: 35px;
+}
+
+.two{
+  height: 400px;
+  width: 23%;
+  /* border: 2px solid rgb(255, 204, 0); */
+  /* float: left; */
+  display: inline-block;
+  margin: 8px;
+}
+
+.three{
+  height: 300px;
+  width: 100%;
+  border: 2px solid rgb(51, 0, 255);
+}
+
+.three img{
+  height: 100%;
+  width: 100%;
+}
+
+.four{
+  height: 85px;
+  width: 100%;
+  margin-top: 10px;
+  position: relative;
+  /* border: 2px solid rgb(21, 255, 0); */
+}
+
+.four1{
+  height: 100%;
+  width: 70%;
+}
+
+.four2{
+  height: 100%;
+  width: 30%;
+  position: absolute;
+  top: 20px;
+  right: 0;
+}
+
+/* down ends */
+
+.btn{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  /* margin-top: 10px; */
+}
+
+/* button ends */
+
+.last{
+  height: 300px;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 40px;
+  color: white;
+  background-color: black;
+}
+
+.float{
+  width: 24%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+
+.float .left{
+  padding-top: 20px;
+}
+
+.float .right{
+  position: absolute;
+  top: 47px;
+  left: 140px
+}
+
+.float .right i{
+  /* display: inline-block; */
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+
+.fa-minus{
+  margin-left: -4px;
+
+}
+
+.last .float1{
+  width: 24%;
+  height: 100%;
+  float: left;
+}
+
+.last .float1 h2{
+  text-transform: uppercase;
+}
+
+.last .float1 ul li{
+  list-style-type: none;
+  line-height: 15px;
+  margin-left: -20px;
+  display: block;
+}
+
+.last h2:hover{
+  transform: scale(1.1);
+  transition: all 3s;
+}
+
+.last .float1 li:hover{
+  transform: scale(1.1);
+  transition: all 3s;
+}
+
+/* last ends */
+
+.head .heading .right i{
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+  -webkit-background-clip: text;
+  /* -moz-background-clip: text; */
+  -webkit-text-fill-color: transparent;
+}
